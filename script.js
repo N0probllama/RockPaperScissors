@@ -59,27 +59,18 @@ function game() {
     else if (result === 'Computer Wins!') {
         computerScore = computerScore + 1;
         alert("Your score: " + playerScore + " Computer Score: " + computerScore + " Tie: " + tie);
-        
+
     }
 
-
-
-
-
-
-
-
-
-
-
-
-// Main game function.
-
-function playRound (playerSelection, computerSelection) {
-
-    // design and add your funtion code here!
+    else {
+        tie = tie + 1;
+        alert("Your score: " + playerScore + "Computer Score: " + computerScore + "Tie: " + tie);
+        
+    }
 }
 
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+// Loop that calles on the 'Game' function and plays through 5 rounds against the computer.
+for (let i=0; i<5; i++) {
+    game();
+}
+
