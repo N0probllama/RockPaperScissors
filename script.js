@@ -16,8 +16,11 @@ function game() {
         let playerSelection = promt("Choose an option between rock, paper or scissors: ");
         let userLowerCase = userChoice.toLowerCase();
 
-
-
+    if (userLowerCase === computerSelection) {
+        result = "Tie!";
+        alert(result = "Tie!");
+    }
+    
 
 }
 
