@@ -1,5 +1,14 @@
 // Rock, Paper, Scissors. to be played in the browser console for now.
 
+// Player greeting 
+alert("Welcome to Rock Paper Scissors");
+
+
+let playerScore = 0;
+let computerScore = 0;
+let tie = 0;
+
+
 // Function to randomly generate computer game choice.
 function getComputerChoice() {
 
