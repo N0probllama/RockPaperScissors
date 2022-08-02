@@ -1,23 +1,39 @@
 // Rock, Paper, Scissors. to be played in the browser console for now.
 
-// Computer selection
-function getComputerChoice(){
+// Function to randomly generate computer game choice.
+function getComputerChoice() {
 
-    const getcomputerChoice = Math.ceil(Math.random()*3);
-
-// Variables as numbers
-    if (getComputerChoice < 1) {
-        getComputerChoice = "rock";
-    }
-    else if (1 <= computerChoice <= 2) {
-        getComputerChoice = "paper";
-    }
-     else {
-        getComputerChoice = "scissors";   
-     }
+    const choices = ['rock', 'paper', 'scissors'];
+    return choices [Math.floor(Math.random() * choices.length)];
 }
 
 
+// Game play function.
+
+function game() {
+
+        let computerSelection = getComputerChoice();
+        let playerSelection = promt("Choose an option between rock, paper or scissors: ");
+        let userLowerCase = userChoice.toLowerCase();
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Main game function.
 
 function playRound (playerSelection, computerSelection) {
 
